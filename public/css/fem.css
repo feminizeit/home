@@ -144,6 +144,10 @@ p {
 #app.testimonials h2{
 	text-align: center;
 }
+#app .test-img{
+	width: 100%;
+	height: auto;
+}
 
 #app .test{
 	margin-bottom:40px;
