@@ -25,6 +25,10 @@ module Feminizeit
       "Hi"
     end
 
+    get '/search' do
+      erb :search
+    end
+
     get '/about' do
       erb :about
     end
@@ -43,7 +47,9 @@ module Feminizeit
     end
 
     def hide_the_moneymaker_technology(html)
-      html.gsub(/value="(.+?)women/, 'value="\\1')
+      html = html.gsub(/value="(.+?)women/, 'value="\\1')
+      html = html.gsub(/<b>(wome.+?)<\/b>/i, '\\1')
+      html.gsub(/<b>(woma.+?)<\/b>/i, '\\1')
     end
 
     def google_shop_url(query)

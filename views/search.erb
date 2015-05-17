@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+
+    </script>
+    <style>
+      body { margin: 0; padding: 0; }
+      #feminize-btn { background: purple; color: #fff; padding: 10px 20px; }
+      iframe { border: none; width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a id="feminize-btn" href="#">Feminize it</a>
+    </nav>
+
+    <iframe src="http://localhost:4444/google/normal?q=<%= params[:q] %>" id="google-iframe" name="google-iframe"></iframe>
+    <iframe src="http://localhost:4444/google/feminizeit?q=<%= params[:q] %>" style="display:none" id="google-iframe" name="google-iframe"></iframe>
+  </body>
+</html>
