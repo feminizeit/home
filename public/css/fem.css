@@ -62,6 +62,11 @@ h1 {
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
+h2{
+	color: #652c90;
+	text-align: center;
+	font-size: 80px;
+}
 
 p {
 	font-size: 40px;
@@ -134,7 +139,14 @@ p {
 
 #app {
 	padding-top: 50px;
+	text-align: left;
+}
+#app.testimonials h2{
 	text-align: center;
+}
+
+#app .test{
+	margin-bottom:30px;
 }
 
 #infographic {
