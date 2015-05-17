@@ -129,9 +129,14 @@
       }
     </style>
 
-
+    <% media = %{http://www.feminizeit.com/images/home-purple.jpg} %>
     <meta property="og:title" content="Feminize It"/>
+    <meta property="og:description" content="We find the female versions of products so your little lady brain doesn't have to."/>
     <meta property="og:url" content="http://www.feminizeit.com/search?q=<%= params[:q] %>"/>
+    <meta property="og:image" content="<%= media %>" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="929" />
   </head>
   <body>
     <div id="loading" style="display:none">
@@ -153,16 +158,22 @@
       </p>
       <p class="social">
         <% 
-          tweet = %{Bless my boobs! Check out the lady version of "#{params[:q]}" from #FeminizeIt}
           share_url = "http://www.feminizeit.com/search?q=#{params[:q]}"
-          url = %{https://twitter.com/intent/tweet?text=#{CGI.escape tweet}&url=#{CGI.escape share_url}&related=sidleykate}
+          text = %{Look at all these things #FeminizeIt told me to get instead of "#{params[:q]}" I needed! }
+          url = %{https://www.pinterest.com/pin/create/button/?url=#{share_url}&media=#{CGI.escape media}&description=#{CGI.escape text}}
         %>
-        <a href="" target="_blank">
+        <a href="<%= url %>" target="_blank">
           <i class="fa fa-pinterest-square"></i>
         </a>
+
+        <% 
+          tweet = %{Bless my boobs! Check out the lady version of "#{params[:q]}" from #FeminizeIt}
+          url = %{https://twitter.com/intent/tweet?text=#{CGI.escape tweet}&url=#{CGI.escape share_url}&related=sidleykate}
+        %>
         <a href="<%= url %>" target="_blank">
           <i class="fa fa-twitter-square"></i>
         </a>
+
         <% 
           url = %{https://www.facebook.com/sharer/sharer.php?&u=#{CGI.escape share_url}}
         %>
