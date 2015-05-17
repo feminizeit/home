@@ -137,6 +137,10 @@ p {
 	bottom: 50px;
 }
 
+#app p {
+	font-size: 30px;
+}
+
 #app {
 	padding-top: 50px;
 	text-align: left;
