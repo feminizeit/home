@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Feminizing "<%= params[:q] %>"</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
@@ -128,6 +129,9 @@
       }
     </style>
 
+
+    <meta property="og:title" content="Feminize It"/>
+    <meta property="og:url" content="http://www.feminizeit.com/search?q=<%= params[:q] %>"/>
   </head>
   <body>
     <div id="loading" style="display:none">
@@ -160,7 +164,7 @@
           <i class="fa fa-twitter-square"></i>
         </a>
         <% 
-          # url = %{https://www.facebook.com/sharer/sharer.php?&u=#{CGI.escape share_url}}
+          url = %{https://www.facebook.com/sharer/sharer.php?&u=#{CGI.escape share_url}}
         %>
         <a href="<%= url %>" target="_blank">
           <i class="fa fa-facebook-square"></i>
