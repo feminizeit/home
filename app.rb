@@ -61,6 +61,7 @@ module Feminizeit
       html = html.gsub('/images/', 'http://google.com/images/')
       html = html.gsub('/xjs/', 'http://google.com/xjs/')
       html = html.gsub(/\<div id=gbar.+?\<\/div\>/m, '')
+      html = html.gsub(/\<div id="_FQd".+?\<\/div\>/m, '')
       html.gsub(/\<div id=guse.+?\<\/div\>/m, '')
     end
 
