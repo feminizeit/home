@@ -136,3 +136,7 @@ p {
 	padding-top: 50px;
 	text-align: center;
 }
+
+#infographic img {
+	height: 500px;
+}
