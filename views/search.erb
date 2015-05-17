@@ -11,14 +11,14 @@
           $('#feminizeit-iframe, nav#retry').delay(400).fadeIn(500);
           $('nav#home').delay(400).hide();
 
-          var percent = 0;
-          interval = setInterval(function() {
-            $('.percent span').html(percent)
-            percent += 1;
-            if (percent > 100) {
-              clearInterval(interval);
-            }
-          }, 15);
+          // var percent = 0;
+          // interval = setInterval(function() {
+          //   $('.percent span').html(percent)
+          //   percent += 1;
+          //   if (percent > 100) {
+          //     clearInterval(interval);
+          //   }
+          // }, 15);
         });
       })
     </script>
@@ -38,6 +38,7 @@
         font-size: 40px;
         margin-right: 60px;
       }
+
       nav .btn:hover {
         background: #652c90; 
         color: #fff;
@@ -87,7 +88,7 @@
         background-size: cover;
         background-position: center center;
         text-align: center;
-        padding-top: 100px; 
+        padding-top: 200px; 
         color: #fff;
         font-size: 60px;
       }
@@ -118,8 +119,8 @@
     <div id="loading" style="display:none">
       <div class="text">
         <img src="/images/logo.png" />
-        <p>Feminizing!</p>
-        <p class="percent">Loading <span></span>%</p>
+        <p>Feminizing...</p>
+        <!-- <p class="percent">Loading <span></span>%</p> -->
       </div>
     </div>
 

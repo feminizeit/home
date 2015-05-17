@@ -29,9 +29,9 @@ module Feminizeit
       erb :search
     end
 
-    get '/about' do
-      erb :about
-    end
+    # get '/about' do
+    #   erb :about
+    # end
 
     get '/google/normal' do
       require 'net/http'
