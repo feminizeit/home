@@ -2,20 +2,101 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
+      $(function() {
+        $('#feminize-btn').on('click', function() {
+          $('#google-iframe').delay(300).fadeOut(500);
+          $('#loading').fadeIn(300).delay(3000).fadeOut(300);
+          
+          $('#feminizeit-iframe, nav#retry').delay(400).fadeIn(500);
+          $('nav#home').delay(400).hide();
 
+        });
+      })
     </script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <style>
-      body { margin: 0; padding: 0; }
-      #feminize-btn { background: purple; color: #fff; padding: 10px 20px; }
-      iframe { border: none; width: 100%; height: 100%; }
+      body { margin: 0; padding: 0; font-family: 'Josefin Sans', sans-serif; }
+
+      nav .btn { 
+        background: #fff; 
+        color: #652c90; 
+        padding: 20px 30px; 
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 40px;
+        margin-right: 60px;
+      }
+      iframe { 
+        margin-top: 160px;
+        border: none; width: 100%; height: 100%; 
+      }
+
+      nav {
+        position: fixed;
+        width: 100%;
+        text-align: right;
+        color: #fff;
+        padding:60px 0;
+        background: url('/images/home-purple.jpg');
+        background-size: cover;
+        background-position: center center;
+        font-size: 24px;
+      }
+
+      #loading {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        background: url('/images/home-purple.jpg');
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+        padding-top: 200px; 
+        color: #fff;
+        font-size: 60px;
+      }
+
+      @-webkit-keyframes rotate {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to { 
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      #loading img {
+        -webkit-animation-name:             rotate; 
+        -webkit-animation-duration:         2s; 
+        -webkit-animation-iteration-count:  infinite;
+        -webkit-animation-timing-function:  linear;
+      }
     </style>
+
   </head>
   <body>
-    <nav>
-      <a id="feminize-btn" href="#">Feminize it</a>
+    <div id="loading" style="display:none">
+      <div class="text">
+        <img src="/images/loading.png" />
+        <p>Feminizing...</p>
+      </div>
+    </div>
+
+    <nav id="home">
+      Here's your normal results. How about we
+      <a id="feminize-btn" class="btn" href="#">Feminize it!</a>
+    </nav>
+
+    <nav id="retry" style="display:none">
+      <a class="btn" href="/">Search again</a>
     </nav>
 
     <iframe src="http://localhost:4444/google/normal?q=<%= params[:q] %>" id="google-iframe" name="google-iframe"></iframe>
-    <iframe src="http://localhost:4444/google/feminizeit?q=<%= params[:q] %>" style="display:none" id="google-iframe" name="google-iframe"></iframe>
+    <iframe src="http://localhost:4444/google/feminizeit?q=<%= params[:q] %>" style="display:none" id="feminizeit-iframe" name="google-iframe"></iframe>
   </body>
 </html>
