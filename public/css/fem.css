@@ -33,14 +33,26 @@ form {
 	text-align: center;
 	border: 0;
 	padding: 50px;
-	font-size: 64px;
 }
 
-input {
+input[type="text"] {
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 30px;
+	width: 60%;
+	text-align: center;
+	background: transparent;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+input[type="submit"] {
+	background: #fff;
+	font-size: 30px;
+	border: 0;
+	height: 65px;
+	padding: 0 20px;
 }
 
 h1 {
