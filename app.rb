@@ -53,6 +53,7 @@ module Feminizeit
     end
 
     def google_shop_url(query)
+      query = query.gsub(' ', '+')
       "https://www.google.com/search?output=search&tbm=shop&q=#{query}&oq=#{query}&gs_l=products-cc.3..0l10.27221.28020.0.28134.6.5.1.0.0.0.316.537.4j3-1.5.0.msedr...0...1ac.1.64.products-cc..0.6.540.d3WzbVwsYws&gws_rd=ssl#tbm=shop&q=#{query}"
     end
 
