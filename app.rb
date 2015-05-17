@@ -48,8 +48,8 @@ module Feminizeit
 
     def hide_the_moneymaker_technology(html)
       html = html.gsub(/value="(.+?)women/, 'value="\\1')
-      html = html.gsub(/<b>(wome.+?)<\/b>/i, '\\1')
-      html.gsub(/<b>(woma.+?)<\/b>/i, '\\1')
+      html = html.gsub(/<b>(wome.+?)<\/b>/i, '')
+      html.gsub(/<b>(woma.+?)<\/b>/i, '')
     end
 
     def google_shop_url(query)

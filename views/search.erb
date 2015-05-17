@@ -5,7 +5,7 @@
       $(function() {
         $('#feminize-btn').on('click', function() {
           $('#google-iframe').delay(300).fadeOut(500);
-          $('#loading').fadeIn(300).delay(3000).fadeOut(300);
+          $('#loading').fadeIn(300).delay(1500).fadeOut(300);
           
           $('#feminizeit-iframe, nav#retry').delay(400).fadeIn(500);
           $('nav#home').delay(400).hide();
@@ -94,16 +94,16 @@
   <body>
     <div id="loading" style="display:none">
       <div class="text">
-        <img src="/images/logo.png" />
+        <a href="/"><img src="/images/logo.png" /></a>
         <p>Feminizing...</p>
       </div>
     </div>
 
     <nav id="home">
       <p>
-        <img src="/images/logo.png" />
+        <a href="/"><img src="/images/logo.png" /></a>
       </p>
-      Here's your <span>normal</span> results. How about we
+      Here are your <span>normal</span> results. How about we
       <a id="feminize-btn" class="btn" href="#">Feminize it!</a>
     </nav>
 
