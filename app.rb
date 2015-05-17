@@ -22,7 +22,7 @@ module Feminizeit
     end
 
     get '/' do
-      "Hi"
+      erb :home
     end
 
     get '/search' do

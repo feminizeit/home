@@ -8,7 +8,7 @@ body {
 }
 
 #intro {
-	background: url('home-purple.jpg') no-repeat center center fixed;
+	background: url('/images/home-purple.jpg') no-repeat center center fixed;
 	width: 100%;
 	height: 800px;
 	-webkit-background-size: cover;
@@ -18,7 +18,7 @@ body {
 }
 
 #topbar {
-	background: url('home-purple.jpg') no-repeat center center fixed;
+	background: url('/images/home-purple.jpg') no-repeat center center fixed;
 	width: 100%;
 	height: 400px;
 	-webkit-background-size: cover;
