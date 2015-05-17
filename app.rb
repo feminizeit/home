@@ -25,8 +25,36 @@ module Feminizeit
       "Hi"
     end
 
-    post '/test' do
-      erb :test
+    get '/about' do
+      erb :about
+    end
+
+    get '/google/normal' do
+      require 'net/http'
+      html = Net::HTTP.get(URI google_shop_url(params[:q]))
+      google_shop_cleaner(html)
+    end
+
+    get '/google/feminizeit' do
+      require 'net/http'
+      html = Net::HTTP.get(URI google_shop_url(params[:q] + '%20women'))
+      html = hide_the_moneymaker_technology(html)
+      google_shop_cleaner(html)
+    end
+
+    def hide_the_moneymaker_technology(html)
+      html.gsub(/value="(.+?)women/, 'value="\\1')
+    end
+
+    def google_shop_url(query)
+      "https://www.google.com/search?output=search&tbm=shop&q=#{query}&oq=#{query}&gs_l=products-cc.3..0l10.27221.28020.0.28134.6.5.1.0.0.0.316.537.4j3-1.5.0.msedr...0...1ac.1.64.products-cc..0.6.540.d3WzbVwsYws&gws_rd=ssl#tbm=shop&q=#{query}"
+    end
+
+    def google_shop_cleaner(html)
+      html = html.gsub('/images/', 'http://google.com/images/')
+      html = html.gsub('/xjs/', 'http://google.com/xjs/')
+      html = html.gsub(/\<div id=gbar.+?\<\/div\>/m, '')
+      html.gsub(/\<div id=guse.+?\<\/div\>/m, '')
     end
 
   end
