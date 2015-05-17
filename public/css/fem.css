@@ -1,0 +1,126 @@
+html, body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+}
+
+#intro {
+	background: url('home-purple.jpg') no-repeat center center fixed;
+	width: 100%;
+	height: 800px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#topbar {
+	background: url('home-purple.jpg') no-repeat center center fixed;
+	width: 100%;
+	height: 400px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+form {
+	position: relative;
+	bottom: 100px;
+	text-align: center;
+	border: 0;
+	padding: 50px;
+	font-size: 64px;
+}
+
+input {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h1 {
+	color: #652c90;
+	font-size: 120px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+p {
+	font-size: 40px;
+}
+
+#intro p {
+	margin: 1%;
+	position: relative;
+	bottom: 80px;
+}
+
+#about p {
+	text-align: center;
+}
+
+#topbar p {
+	text-align: right;
+	color: white;
+}
+
+#intro p {
+	text-align: center;
+	color: white;
+}
+
+#about {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 50px;
+}
+
+#press {
+	padding-top: 100px;
+	text-align: center;
+	background-color: #efefef;
+}
+
+#logo1 img {
+	height: 400px;
+}
+
+#logo2 img {
+	height: 200px;
+	width: auto;
+}
+
+#logo1 {
+	text-align: center;
+	padding: 5%;
+}
+
+#logo2 {
+	text-align: left;
+	padding: 5%;
+	display: inline-block;
+}
+
+#presspic img {
+	display: inline-block;
+	padding-top: 5%;
+	width: 100%;
+}
+
+#presspic {
+	padding-bottom: 60px;
+	position: relative;
+	bottom: 50px;
+}
+
+#app {
+	padding-top: 50px;
+	text-align: center;
+}
