@@ -45,6 +45,18 @@
         background-position: center center;
         font-size: 24px;
       }
+      nav p {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: 50px;
+      }
+      nav p img {
+        width: 100px;
+      }
+      nav span {
+        text-decoration: underline;
+      }
 
       #loading {
         position: absolute;
@@ -82,13 +94,16 @@
   <body>
     <div id="loading" style="display:none">
       <div class="text">
-        <img src="/images/loading.png" />
+        <img src="/images/logo.png" />
         <p>Feminizing...</p>
       </div>
     </div>
 
     <nav id="home">
-      Here's your normal results. How about we
+      <p>
+        <img src="/images/logo.png" />
+      </p>
+      Here's your <span>normal</span> results. How about we
       <a id="feminize-btn" class="btn" href="#">Feminize it!</a>
     </nav>
 
@@ -96,7 +111,7 @@
       <a class="btn" href="/">Search again</a>
     </nav>
 
-    <iframe src="http://localhost:4444/google/normal?q=<%= params[:q] %>" id="google-iframe" name="google-iframe"></iframe>
-    <iframe src="http://localhost:4444/google/feminizeit?q=<%= params[:q] %>" style="display:none" id="feminizeit-iframe" name="google-iframe"></iframe>
+    <iframe src="/google/normal?q=<%= params[:q] %>" id="google-iframe" name="google-iframe"></iframe>
+    <iframe src="/google/feminizeit?q=<%= params[:q] %>" style="display:none" id="feminizeit-iframe" name="google-iframe"></iframe>
   </body>
 </html>
