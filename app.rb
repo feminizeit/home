@@ -22,6 +22,7 @@ module Feminizeit
     end
 
     get '/' do
+      "Hi"
     end
 
     post '/test' do
