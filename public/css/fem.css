@@ -108,12 +108,31 @@ p {
 #contact {
 	width: 100%;
 	background-color: #efefef;
+	padding-bottom: 50px;
 }
 
 .content {
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+
+.content a:link {
+    color: #652c90;
+    text-decoration: none;
+}
+
+.content a:visited {
+	color: #652c90;
+}
+
+.content a:hover {
+	color: black;
+}
+
+.content a:active {
+	color: black;
 }
 
 #logo1 img {
