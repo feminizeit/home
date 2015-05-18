@@ -1,4 +1,4 @@
-# FeminizeIt Homepage
+# FeminizeIt 
 
 ### How to install
 `gem install sinatra`
