@@ -105,6 +105,13 @@ p {
 	background-color: #efefef;
 }
 
+#contact {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #efefef;
+}
+
 #logo1 img {
 	/*height: 40%;*/
 }
@@ -145,15 +152,15 @@ p {
 	padding-top: 50px;
 	text-align: left;
 }
-#app.testimonials h2{
+#app.testimonials h2 {
 	text-align: center;
 }
-#app .test-img{
-/*	width: 100%;*/
-	height: auto;
+#app .test-img {
+	width: 100%;
+	max-height: 150px;
 }
 
-#app .test{
+#app .test {
 	margin-bottom:40px;
 }
 
