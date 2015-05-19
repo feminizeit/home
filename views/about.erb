@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    	<!-- <link rel='stylesheet' href='../public/css/fem.css'> -->
+    	<link rel='stylesheet' href='/css/fem.css'>
+		<title>Feminize It!</title>
+
+		<% media = %{http://www.feminizeit.com/images/home-purple.jpg} %>
+    <meta property="og:title" content="Feminize It"/>
+    <meta property="og:description" content="We find the female versions of products so your little lady brain doesn't have to."/>
+    <meta property="og:url" content="http://www.feminizeit.com/search?q=<%= params[:q] %>"/>
+    <meta property="og:image" content="<%= media %>" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="929" />
+	</head>
+	<body>
+		<div id="intro">
+			<div id="logo2">
+				<img src="/images/logo.png">
+			</div>
+			<p>We find the female versions of products so your little lady brain doesn't have to.</p>
+		</div>
+
+		<div id="bios">
+			<h1>Who is behind the Feminize It?</h1>
+			<div class="biopic">
+				<img src="/images/casey.png">
+			</div>
+		</div>
+
+		<div id="press">
+			<p>As seen in . . .</p>
+			<div id="presspic">
+				<img src="/images/logos/logos-grey.png">
+			</div>
+		</div>
+
+		<div id="app" class="testimonials">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Testimonials</h2>
+				</div>
+			</div>
+			<div class="row test">
+				<div class="col-md-2 col-md-offset-1">
+					<img src="/images/test-woman1.png" class="test-img">
+				</div>
+				<div class="col-md-8">
+					<p>&ldquo;I was searching for the perfect tent, but like, a lady version of a tent. My "Feminize It&trade;" search results showed me all kinds of fun dresses! Thanks for reminding me that I shouldn't be out in the woods fending for myself &mdash; I should be dressing up and trying to snag a husband!&rdquo;<br>
+&mdash; Amber Fessenden, Houston, TX</p>
+				</div>
+			</div>
+						<div class="row test">
+				<div class="col-md-2 col-md-offset-1">
+					<img src="/images/test-woman2.png" class="test-img">
+				</div>
+				<div class="col-md-8">
+					<p>&ldquo;Please don't put me on the testimonials page.&rdquo;<br>
+&mdash; Kristen Wolfe, Washington, DC</p>
+				</div>
+			</div>
+				<div class="row test">
+				<div class="col-md-2 col-md-offset-1">
+					<img src="/images/test-guy.png" class="test-img">
+				</div>
+				<div class="col-md-8">
+					<p>&ldquo;Women must love this.&rdquo;<br>
+&mdash; Stephen Solomon, Canton, OH</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-63027172-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+	</body>
+</html>
