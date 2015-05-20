@@ -70,9 +70,11 @@ h2 {
 }
 
 h3 {
-	color: #652c90;
+	color: black;
 	text-align: center;
 	font-size: 56px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 p {
