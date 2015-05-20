@@ -230,4 +230,6 @@ p {
 
 #abouttext {
 	background-color: #efefef; 
+	position: relative;
+	bottom: 40px;
 }
