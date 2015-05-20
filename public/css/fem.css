@@ -62,10 +62,17 @@ h1 {
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
-h2{
+
+h2 {
 	color: #652c90;
 	text-align: center;
 	font-size: 80px;
+}
+
+h3 {
+	color: #652c90;
+	text-align: center;
+	font-size: 56px;
 }
 
 p {
