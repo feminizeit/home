@@ -17,6 +17,17 @@ body {
 	background-size: cover;
 }
 
+
+#introabout {
+	background: url('/images/home-purple.jpg') no-repeat center center fixed;
+	width: 100%;
+	height: 600px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 #topbar {
 	background: url('/images/home-purple.jpg') no-repeat center center fixed;
 	width: 100%;
