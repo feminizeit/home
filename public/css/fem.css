@@ -123,6 +123,22 @@ p {
 	margin-right: 10%;
 }
 
+#abouttext a:link {
+    color: #652c90;
+    text-decoration: none;
+}
+
+#abouttext a:visited {
+	color: #652c90;
+}
+
+#abouttext a:hover {
+	color: black;
+}
+
+#abouttext a:active {
+	color: black;
+}
 
 .content a:link {
     color: #652c90;
