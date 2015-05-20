@@ -20,7 +20,7 @@ body {
 #topbar {
 	background: url('/images/home-purple.jpg') no-repeat center center fixed;
 	width: 100%;
-	height: 400px;
+	height: 160px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -150,11 +150,6 @@ p {
 	width: auto;
 }
 
-#logo3 img {
-	height: 200px;
-	width: auto;
-}
-
 #logo1 {
 	text-align: center;
 	padding: 5%;
@@ -164,11 +159,6 @@ p {
 	text-align: left;
 	padding: 5%;
 	display: inline-block;
-}
-
-#logo3 {
-	text-align: center;
-	padding: 5%;
 }
 
 #presspic img {
@@ -213,4 +203,13 @@ p {
 }
 #infographic img {
 	height: 500px;
+}
+
+.btn-social-icon {
+	color: white;
+}
+
+.social {
+	text-align: right;
+	padding: 5%;
 }
