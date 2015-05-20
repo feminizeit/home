@@ -29,6 +29,10 @@ module Feminizeit
       erb :search
     end
 
+    get '/about' do 
+      erb :about
+    end
+
     # get '/about' do
     #   erb :about
     # end
