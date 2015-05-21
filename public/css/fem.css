@@ -259,21 +259,21 @@ p {
 	padding-bottom: 20px;
 }
 
-p.social .btn:hover {
+.social .btn:hover {
 	background: #652c90; 
 	color: #fff;
 }
 
-p.social {
+.social {
 position: absolute;
 left: 186px;
 top: 20px;
 font-size: 40px;
 }
-p.social a {
+.social a {
 color: #fff;
 text-decoration: none;
 }
-p.social a:hover {
+.social a:hover {
 color: #652c90;
 }
