@@ -265,15 +265,15 @@ p {
 }
 
 .social {
-position: absolute;
-left: 186px;
-top: 20px;
-font-size: 40px;
+	position: absolute;
+	left: 186px;
+	top: 20px;
+	font-size: 40px;
 }
 .social a {
-color: #fff;
-text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 .social a:hover {
-color: #652c90;
+	color: #652c90;
 }
